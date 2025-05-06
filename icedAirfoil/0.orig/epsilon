@@ -21,6 +21,7 @@ internalField uniform 0.14;
 
 boundaryField
 {
+
     wing
     {
         type            epsilonWallFunction;
@@ -43,6 +44,7 @@ boundaryField
         inletValue      $internalField;
         value           $internalField;
     }
+    
 }
 
 // ************************************************************************* //

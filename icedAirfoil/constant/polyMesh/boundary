@@ -21,28 +21,28 @@ FoamFile
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          10592;
-        startFace       249642;
+        nFaces          4117;
+        startFace       30218;
     }
     sym2
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          10617;
-        startFace       260234;
-    }
-    inout
-    {
-        type            patch;
-        nFaces          109;
-        startFace       270851;
+        nFaces          4166;
+        startFace       34335;
     }
     wing
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          6638;
-        startFace       270960;
+        nFaces          778;
+        startFace       38501;
+    }
+    inout
+    {
+        type            patch;
+        nFaces          173;
+        startFace       39279;
     }
 )
 

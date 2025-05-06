@@ -21,6 +21,7 @@ internalField   uniform 4.5E-5;
 
 boundaryField
 {
+
     wing
     {
         type            nutUSpaldingWallFunction;

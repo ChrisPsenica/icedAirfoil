@@ -21,6 +21,7 @@ internalField   uniform 100;
 
 boundaryField
 {
+
     wing
     {
         type            omegaWallFunction;
@@ -44,6 +45,7 @@ boundaryField
         inletValue      $internalField;
         value           $internalField;
     }
+    
 }
 
 

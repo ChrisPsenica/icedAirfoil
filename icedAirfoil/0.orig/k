@@ -21,6 +21,7 @@ internalField   uniform 0.015;
 
 boundaryField
 {
+
     wing
     {
         type            kqRWallFunction;
@@ -43,6 +44,7 @@ boundaryField
         inletValue      $internalField;
         value           $internalField;
     }
+    
 }
 
 

@@ -24,13 +24,14 @@ U0 = 20.0
 p0 = 0.0
 nuTilda0 = 4.5e-5
 aoa0 = 0.0
-A0 = 0.1
+A0 = 1e-3
 rho0 = 1.0
 
 # Input parameters for DAFoam
 daOptions = {
     "solverName": "DASimpleFoam",
-    "primalMinResTol": 1.0e-8,
+    "primalMinResTol": 1e-8,
+    "primalMinResTolDiff": 1e8,
     "primalBC": {
         "U0": {"variable": "U", "patches": ["inout"], "value": [U0, 0.0, 0.0]},
         "p0": {"variable": "p", "patches": ["inout"], "value": [p0]},

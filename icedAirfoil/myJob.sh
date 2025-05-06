@@ -25,6 +25,8 @@ fi
 # =============================================================================
 #---------- Preprocessing ----------
 cp -r 0.orig 0
+#fluent3DMeshToFoam icedAirfoilMesh4.msh
+#createPatch -overwrite
 renumberMesh -overwrite
 
 #---------- runScript.py ----------

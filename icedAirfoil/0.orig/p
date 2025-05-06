@@ -21,6 +21,7 @@ internalField   uniform 0;
 
 boundaryField
 {
+    
     wing
     {
         type            zeroGradient;
@@ -38,9 +39,11 @@ boundaryField
 
     inout
     {
-        type            fixedValue;
+        type            outletInlet;
+        outletValue     $internalField;
         value           $internalField;
     }
+    
 }
 
 
