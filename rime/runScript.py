@@ -24,7 +24,7 @@ U0 = 20.0
 p0 = 0.0
 nuTilda0 = 4.5e-5
 aoa0 = 0.0
-A0 = 9.5e-4
+A0 = 9.441e-4
 rho0 = 1.0
 
 # Input parameters for DAFoam

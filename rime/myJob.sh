@@ -6,6 +6,8 @@
 #SBATCH --job-name="icedAF"                 # job name
 #SBATCH --output="log-%j.txt"               # job standard output file (%j replaced by job id)
 #SBATCH --constraint=intel                  # use intel cores to avoid bad termination on HPC
+#SBATCH --mail-user=cpsenica@iastate.edu    # who to email when the job is done
+#SBATCH --mail-type=ALL                     # mail type
 
 # =============================================================================
 # Load Modules
@@ -29,7 +31,7 @@ cp -r 0.orig 0
 #renumberMesh -overwrite
 
 #---------- runScript.py ----------
-mpirun -np 72 python runScript.py -optimizer=SNOPT
+mpirun -np 72 python runScript.py
 
 #---------- Reconstruct ----------
 reconstructPar  && rm -rf processor*
